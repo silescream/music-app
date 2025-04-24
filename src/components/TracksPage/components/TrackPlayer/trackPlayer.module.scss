@@ -1,0 +1,29 @@
+.visualiseWrapper {
+  display: flex;
+  position: absolute;
+  bottom: 1px;
+  width: calc(100% - 8px);
+  gap: 2px;
+
+  .visualProgress {
+    width: 100%;
+  }
+
+  .visualControls {
+    display: flex;
+    gap: 2px;
+
+    button {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      border-radius: 8px;
+      background: none;
+      border: none;
+    }
+  }
+}

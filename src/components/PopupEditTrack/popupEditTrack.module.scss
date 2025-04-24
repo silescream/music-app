@@ -1,0 +1,64 @@
+.formWrapper {
+  color: black;
+
+  .formInput {
+    label {
+      margin-right: 12px;
+    }
+  }
+
+  .genresWrap {
+    .selectedGenres {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+
+      &Item {
+        background: #ddd;
+        padding: 4px 8px;
+        border-radius: 8px;
+        display: inline-flex;
+        align-items: center;
+        font-size: 14px;
+      }
+
+      &Delete {
+        margin-left: 4px;
+        padding: 0;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  .genresSelector {
+    margin-top: 8px;
+
+    button {
+      margin-right: 4px;
+    }
+  }
+
+  .coverImageWrap {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      margin: 8px 0;
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
+  .submitButton {
+    margin-top: 16px;
+  }
+
+  .error {
+    color: red;
+    margin: 4px 0;
+  }
+}

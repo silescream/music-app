@@ -1,0 +1,14 @@
+.filterWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  .filterItem {
+    font-size: 12px;
+
+    .filterSelect {
+      margin-left: 4px;
+      cursor: pointer;
+    }
+  }
+}

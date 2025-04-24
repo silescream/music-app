@@ -1,0 +1,105 @@
+.trackListWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 16px 16px; 
+
+  .sortWrapper {
+    display: flex;
+    gap: 4px;
+  }
+
+  .tracksWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    @media(min-width: 1140px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  .pagination {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 16px;
+  
+    button {
+      padding: 6px 12px;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+  
+      &.active {
+        background: #0070f3;
+        color: white;
+        font-weight: bold;
+      }
+  
+      &:disabled {
+        cursor: not-allowed;
+        border: 1px solid gray;
+      }
+    }
+  }
+
+  .customSelect {
+    position: relative;
+    display: inline-block;
+  
+    .selectButton {
+      padding: 6px 12px;
+      cursor: pointer;
+    }
+  
+    .selectMenu {
+      position: absolute;
+      background: white;
+      border: 1px solid #ccc;
+      margin-top: 4px;
+      z-index: 10;
+  
+      .selectOption {
+        padding: 6px 12px;
+        cursor: pointer;
+        color: black;
+  
+        &:hover {
+          background: #eee;
+        }
+      }
+    }
+  }
+
+  .selectModeToggle {
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  .selectionActions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    margin-left: auto;
+
+    button {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      cursor: pointer;
+
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+  }
+}
