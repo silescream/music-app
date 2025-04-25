@@ -1,0 +1,48 @@
+.sortWrap {
+  .customSelect {
+    position: relative;
+
+    &:has([class*='_selectMenu']) {
+      .selectButton {
+        border-radius: 4px 4px 0 0;
+        border: none;
+      }
+    }
+  
+    .selectButton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 42px;
+      height: 42px;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+    }
+  
+    .selectMenu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: rgb(107, 107, 107);
+      border: none;
+      border-radius: 0 4px 4px 4px;
+      z-index: 10;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  
+      .selectOption {
+        padding: 6px 12px;
+        width: max-content;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+  
+        &:hover {
+          background: #f0f0f0;
+        }
+      }
+    }
+  }
+  
+}
